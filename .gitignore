@@ -1,28 +1,16 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include <iostream>
+#include <conio.h>
+using namespace std;
+void main()
+{
+	int n;
+	int factorial = 1;
+	int suma = 0;
+	cout << "ingrese n: ";
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+		suma = (factorial= i*factorial) + suma;
+	cout << "la suma es:" << suma;
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+_getch();
+}
